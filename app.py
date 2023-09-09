@@ -14,11 +14,9 @@ def get_today():
 
 def get_time():
     t=datetime.utcnow()
-    tt=t.isoformat()[:-7]+'Z'
+    tt=t..strftime("%Y-%m-%dT%H:%M:%SZ")
     return tt
-def get_status():
-    if request.method =="GET":
-        return 200
+
 
 user={
       'slack_name':'Maureen Mwenswa',
