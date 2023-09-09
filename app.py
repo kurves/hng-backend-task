@@ -14,7 +14,7 @@ def get_today():
 
 def get_time():
     t=datetime.utcnow()
-    tt=t..strftime("%Y-%m-%dT%H:%M:%SZ")
+    tt=t.strftime("%Y-%m-%dT%H:%M:%SZ")
     return tt
 
 
