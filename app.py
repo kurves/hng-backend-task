@@ -19,7 +19,7 @@ def get_time():
 
 
 user={
-      'slack_name':'Maureen Mwenswa',
+      'slack_name':'Maureen_Mwenswa',
       'track':'backend',
         'current_day':get_today(),
         'utc_time':get_time(),
