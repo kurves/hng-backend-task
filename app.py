@@ -1,5 +1,6 @@
 from flask import Flask,request
 from flask import jsonify
+import time
 
 
 
@@ -12,15 +13,21 @@ def get_today():
     today=dt.strftime('%A')
     return today
 
-"""def get_time():
-    t=datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-    return t"""
+def get_time():
+    while True:
+        t=datetime.utcnow()
+        tt=t.strftime("%Y-%m-%dT%H:%M:%SZ")
+        return tt
+        time.sleep(0)
+    
+
+
 
 user={
       'slack_name':'Maureen_Mwenswa',
       'track':'backend',
         'current_day':get_today(),
-        'utc_time':datetime.utcnow.strftime("%Y-%m-%dT%H:%m:%SZ"),
+        'utc_time':get_time(),
         'github_file_url':'https://github.com/kurves/hng-backend-task/blob/main/app.py',
         'github_repo_url':'https://github.com/kurves/hng-backend-task',
         'status_code':200
