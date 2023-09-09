@@ -16,12 +16,11 @@ def get_today():
     t=datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     return t"""
 
-
 user={
       'slack_name':'Maureen_Mwenswa',
       'track':'backend',
         'current_day':get_today(),
-        'utc_time':datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        'utc_time':datetime.utcnow.strftime("%Y-%m-%dT%H:%m:%SZ"),
         'github_file_url':'https://github.com/kurves/hng-backend-task/blob/main/app.py',
         'github_repo_url':'https://github.com/kurves/hng-backend-task',
         'status_code':200
