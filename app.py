@@ -14,7 +14,7 @@ def get_today():
 
 def get_time():
     t=datetime.utcnow()
-    tt=t.isoformat(timespec='milliseconds')[:-4]+'Z'
+    tt=t.isoformat()[:-7]+'Z'
     return tt
 def get_status():
     if request.method =="GET":
@@ -22,7 +22,7 @@ def get_status():
 
 user={
       'slack_name':'Maureen Mwenswa',
-      'track':'Backend',
+      'track':'backend',
         'current_day':get_today(),
         'utc_time':get_time(),
         'github_file_url':'https://github.com/kurves/hng-backend-task/blob/main/app.py',
